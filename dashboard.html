@@ -1,0 +1,175 @@
+
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SafePath AI - لوحة الرادار</title>
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+  <div class="site-shell">
+
+<header class="site-header">
+  <div class="container header-row">
+    <a class="brand" href="index.html" aria-label="SafePath AI">
+      <img class="brand-logo" src="assets/images/logo-univ.png" alt="شعار الجامعة">
+      <div class="brand-copy">
+        <span class="brand-title">SafePath AI Dashboard</span>
+        <span class="brand-subtitle">جامعة 20 أوت 1955 - سكيكدة</span>
+      </div>
+    </a>
+
+    <nav class="top-nav" aria-label="التنقل الرئيسي">
+      <a href="index.html">الرئيسية</a>
+      <a href="dashboard.html">لوحة الرادار</a>
+      <a href="analysis.html">تحليل الذكاء الاصطناعي</a>
+      <a href="safe-path.html">المسار الآمن</a>
+      <a href="alerts.html">التنبيهات</a>
+    </nav>
+
+    <div class="header-actions">
+      <span class="mini-status">
+        <span class="dot safe" data-system-status-dot></span>
+        <span data-system-status-text>النظام نشط</span>
+      </span>
+      <a class="btn-secondary" href="dashboard.html">ابدأ المراقبة</a>
+    </div>
+  </div>
+</header>
+
+
+    <main>
+      <section class="page-banner">
+        <div class="container">
+          <div class="banner-card">
+            <div class="banner-head">
+              <div>
+                <span class="section-kicker">📡 Radar Dashboard</span>
+                <h1>لوحة الرادار الذكية</h1>
+                <p class="section-text">واجهة مباشرة لمراقبة الحركة والمسافة ونوع الجسم ومستوى الخطر.</p>
+              </div>
+              <div class="banner-actions">
+                <button class="btn" data-action="simulate-danger">محاكاة خطر</button>
+                <button class="btn-secondary" data-action="simulate-medium">محاكاة حركة متوسطة</button>
+                <button class="btn-ghost" data-action="reset-system">إعادة ضبط</button>
+              </div>
+            </div>
+
+            <div class="summary-grid">
+              <div class="summary-card">
+                <span class="card-kicker">🟢 الحالة</span>
+                <h3 data-system-status-text>النظام نشط</h3>
+                <p class="card-text">حالة التشغيل الحالية للمنصة داخل الحرم الجامعي.</p>
+              </div>
+              <div class="summary-card">
+                <span class="card-kicker">🚨 التنبيهات</span>
+                <h3><span data-alert-count>2</span> تنبيه</h3>
+                <p class="card-text">عدد التنبيهات النشطة أو المسجلة أثناء العرض.</p>
+              </div>
+              <div class="summary-card">
+                <span class="card-kicker">📍 المنطقة الحالية</span>
+                <h3 data-current-zone>البوابة الرئيسية</h3>
+                <p class="card-text">المنطقة التي يعرضها النظام باعتبارها محور الرصد الحالي.</p>
+              </div>
+              <div class="summary-card">
+                <span class="card-kicker">🕒 وقت مباشر</span>
+                <h3 data-live-clock>--:--:--</h3>
+                <p class="card-text">توقيت مباشر يمنح العرض طابعًا حيًا واحترافيًا.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section">
+        <div class="container dashboard-grid">
+          <section class="radar-panel">
+            <div class="row-between" style="margin-bottom: 16px;">
+              <div>
+                <span class="card-kicker">🎯 التتبع الحي</span>
+                <h2 class="section-title" style="margin: 14px 0 8px;">رصد الاتجاهات والأجسام</h2>
+              </div>
+              <span class="badge safe">وضع العرض التفاعلي</span>
+            </div>
+
+            <div class="radar-frame">
+              <canvas id="radarCanvas" aria-label="رادار تفاعلي"></canvas>
+            </div>
+
+            <div class="radar-toolbar" style="margin-top: 18px;">
+              <button class="quick-action" data-action="simulate-danger">تشغيل سيناريو خطر</button>
+              <button class="quick-action" data-action="simulate-medium">تشغيل حركة عادية</button>
+              <button class="quick-action" data-action="reset-system">تهيئة أولية</button>
+            </div>
+          </section>
+
+          <aside class="side-stack">
+            <div class="status-card">
+              <span class="card-kicker">📋 بيانات مباشرة</span>
+              <h3>تفاصيل الجسم الحالي</h3>
+              <div class="live-grid">
+                <div class="live-item">
+                  <span class="meta-label">المسافة</span>
+                  <strong data-current-distance>2.5 م</strong>
+                </div>
+                <div class="live-item">
+                  <span class="meta-label">الزاوية</span>
+                  <strong data-current-angle>45°</strong>
+                </div>
+                <div class="live-item">
+                  <span class="meta-label">نوع الجسم</span>
+                  <strong data-current-type>إنسان</strong>
+                </div>
+                <div class="live-item">
+                  <span class="meta-label">المنطقة</span>
+                  <strong data-current-zone>البوابة الرئيسية</strong>
+                </div>
+              </div>
+              <div class="separator"></div>
+              <div class="row-between">
+                <span class="meta-label">مستوى الخطر</span>
+                <span class="badge warn" data-risk-badge>خطر متوسط</span>
+              </div>
+            </div>
+
+            <div class="risk-card">
+              <span class="card-kicker">🧠 القرار الذكي</span>
+              <h3>توصية النظام</h3>
+              <p class="card-text" data-current-recommendation>يفضّل التوجه عبر المسار الجنوبي المضاء.</p>
+              <div class="risk-bar">
+                <span data-risk-progress></span>
+              </div>
+            </div>
+
+            <div class="log-card">
+              <span class="card-kicker">📜 آخر الأحداث</span>
+              <h3>سجل المراقبة المباشر</h3>
+              <div class="feed-list" id="eventFeed"></div>
+            </div>
+          </aside>
+        </div>
+      </section>
+    </main>
+
+
+<footer class="footer">
+  <div class="container">
+    <div class="footer-card">
+      <div>
+        <strong>SafePath AI</strong>
+        <p>منصة جامعية ذكية للمراقبة والتنبيه واقتراح المسار الآمن داخل الحرم الجامعي.</p>
+      </div>
+      <div class="small">
+        <div>آخر تحديث مباشر: <span data-live-clock>--:--:--</span></div>
+        <div>© <span data-current-year></span> جامعة 20 أوت 1955 - سكيكدة</div>
+      </div>
+    </div>
+  </div>
+</footer>
+
+  </div>
+
+  <script src="assets/js/app.js"></script>
+</body>
+</html>

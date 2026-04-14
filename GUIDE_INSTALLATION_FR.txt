@@ -1,0 +1,50 @@
+
+GUIDE RAPIDE - COMMENT AJOUTER LE LOGO ET LA CARTE
+=================================================
+
+1) Ouvre le dossier du projet :
+   safepath-ai-dashboard
+
+2) Ouvre ensuite le dossier :
+   assets
+
+3) Ouvre ensuite le dossier :
+   images
+
+Tu verras déjà 2 fichiers :
+- logo-univ.png
+- campus-map.png
+
+4) Pour le logo :
+- prends ton logo officiel
+- renomme-le exactement : logo-univ.png
+- copie-le dans le dossier images
+- accepte le remplacement
+
+5) Pour la carte :
+- prends l'image de la carte
+- renomme-la exactement : campus-map.png
+- copie-la dans le dossier images
+- accepte le remplacement
+
+IMPORTANT :
+-----------
+Si tu gardes les mêmes noms de fichiers, tu n'as rien à modifier dans le code.
+Le site va utiliser automatiquement les nouvelles images.
+
+Si l'image du logo n'apparaît pas bien :
+- utilise un PNG avec fond transparent si possible
+- essaie une image carrée
+
+Si la carte est trop zoomée ou mal cadrée :
+- utilise une image horizontale (largeur plus grande que hauteur)
+- ratio conseillé : 16:9 ou 4:3
+
+COMMENT TESTER :
+----------------
+- ouvre index.html
+- vérifie que le logo est visible en haut du site
+- va dans la page المسار الآمن
+- vérifie que la carte apparaît dans la grande zone centrale
+
+AUCUN XAMPP N'EST NECESSAIRE.

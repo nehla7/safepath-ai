@@ -1,0 +1,158 @@
+
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SafePath AI - المسار الآمن</title>
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+  <div class="site-shell">
+
+<header class="site-header">
+  <div class="container header-row">
+    <a class="brand" href="index.html" aria-label="SafePath AI">
+      <img class="brand-logo" src="assets/images/logo-univ.png" alt="شعار الجامعة">
+      <div class="brand-copy">
+        <span class="brand-title">SafePath AI Dashboard</span>
+        <span class="brand-subtitle">جامعة 20 أوت 1955 - سكيكدة</span>
+      </div>
+    </a>
+
+    <nav class="top-nav" aria-label="التنقل الرئيسي">
+      <a href="index.html">الرئيسية</a>
+      <a href="dashboard.html">لوحة الرادار</a>
+      <a href="analysis.html">تحليل الذكاء الاصطناعي</a>
+      <a href="safe-path.html">المسار الآمن</a>
+      <a href="alerts.html">التنبيهات</a>
+    </nav>
+
+    <div class="header-actions">
+      <span class="mini-status">
+        <span class="dot safe" data-system-status-dot></span>
+        <span data-system-status-text>النظام نشط</span>
+      </span>
+      <a class="btn-secondary" href="dashboard.html">ابدأ المراقبة</a>
+    </div>
+  </div>
+</header>
+
+
+    <main>
+      <section class="page-banner">
+        <div class="container">
+          <div class="banner-card">
+            <span class="section-kicker">🗺️ Safe Path</span>
+            <h1>خريطة المسار الآمن</h1>
+            <p class="section-text">خريطة مبسطة تعرض المسار المقترح، المناطق الحساسة، ونقاط الأمان داخل الحرم الجامعي.</p>
+          </div>
+        </div>
+      </section>
+
+      <section class="section">
+        <div class="container">
+          <div class="map-card">
+            <div class="row-between">
+              <div>
+                <span class="card-kicker">📍 سيناريو مقترح</span>
+                <h3>من الإقامة الجامعية إلى البوابة الرئيسية</h3>
+              </div>
+              <div class="map-legend">
+                <span class="legend-item"><span class="dot safe"></span> منطقة آمنة</span>
+                <span class="legend-item"><span class="dot warn"></span> منطقة متوسطة</span>
+                <span class="legend-item"><span class="dot danger"></span> منطقة خطر</span>
+              </div>
+            </div>
+
+            <div class="map-view">
+              <img src="assets/images/campus-map.png" alt="خريطة الحرم الجامعي">
+              <div class="map-overlay">
+                <div class="route-line" aria-hidden="true">
+                  <svg viewBox="0 0 100 60" preserveAspectRatio="none">
+                    <path d="M15,46 C24,40 28,34 36,30 C45,25 51,22 61,20 C70,19 78,19 86,14"
+                          fill="none" stroke="#2EEA8A" stroke-width="2.2" stroke-linecap="round" stroke-dasharray="2 2" />
+                  </svg>
+                </div>
+                <div class="map-marker safe" style="top: 75%; right: 76%;">
+                  <strong>نقطة الانطلاق</strong>
+                  <div class="small">الإقامة الجامعية</div>
+                </div>
+                <div class="map-marker danger" style="top: 38%; right: 48%;">
+                  <strong>منطقة خطر</strong>
+                  <div class="small">المسار الشمالي</div>
+                </div>
+                <div class="map-marker warn" style="top: 52%; right: 60%;">
+                  <strong>مراقبة متوسطة</strong>
+                  <div class="small">موقف السيارات</div>
+                </div>
+                <div class="map-marker safe" style="top: 24%; right: 18%;">
+                  <strong>نقطة الوصول</strong>
+                  <div class="small">البوابة الرئيسية</div>
+                </div>
+              </div>
+            </div>
+
+            <div class="path-grid">
+              <div class="path-card">
+                <span class="card-kicker">✅ المسار المقترح</span>
+                <h3>الممر الجنوبي المضاء</h3>
+                <p class="card-text">يقلل الاحتكاك بالمناطق عالية الخطورة، ويوفر رؤية أوضح وحركة أكثر أمانًا.</p>
+              </div>
+              <div class="path-card">
+                <span class="card-kicker">⚠️ المنطقة التي يجب تجنبها</span>
+                <h3>المسار الشمالي</h3>
+                <p class="card-text">تم تمييزه باللون الأحمر بسبب رصد جسم متحرك قريب من خط السير.</p>
+              </div>
+              <div class="path-card">
+                <span class="card-kicker">🕒 المدة التقديرية</span>
+                <h3>4 دقائق</h3>
+                <p class="card-text">المسار البديل أطول قليلًا لكنه أكثر أمانًا ووضوحًا للطالب.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section">
+        <div class="container zones-grid">
+          <div class="zone-card">
+            <span class="card-kicker">🟢 منطقة آمنة</span>
+            <h3>البوابة الرئيسية</h3>
+            <p class="card-text">إضاءة أفضل ومجال رؤية مفتوح، مناسبة كنقطة وصول نهائية.</p>
+          </div>
+          <div class="zone-card">
+            <span class="card-kicker">🟡 منطقة متوسطة</span>
+            <h3>موقف السيارات</h3>
+            <p class="card-text">تحتاج مراقبة مستمرة لوجود حركة متغيرة وأجسام ثابتة.</p>
+          </div>
+          <div class="zone-card">
+            <span class="card-kicker">🔴 منطقة خطر</span>
+            <h3>المسار الشمالي</h3>
+            <p class="card-text">اقترب جسم متحرك من خط السير المقترح، لذلك تم استبعاده مؤقتًا.</p>
+          </div>
+        </div>
+      </section>
+    </main>
+
+
+<footer class="footer">
+  <div class="container">
+    <div class="footer-card">
+      <div>
+        <strong>SafePath AI</strong>
+        <p>منصة جامعية ذكية للمراقبة والتنبيه واقتراح المسار الآمن داخل الحرم الجامعي.</p>
+      </div>
+      <div class="small">
+        <div>آخر تحديث مباشر: <span data-live-clock>--:--:--</span></div>
+        <div>© <span data-current-year></span> جامعة 20 أوت 1955 - سكيكدة</div>
+      </div>
+    </div>
+  </div>
+</footer>
+
+  </div>
+
+  <script src="assets/js/app.js"></script>
+</body>
+</html>
